@@ -6,15 +6,41 @@
 //
 
 import UIKit
+import OneSignalFramework
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+    var restrictRotation: UIInterfaceOrientationMask = .all
+    private let oneSignalIDCheker = OneSignalIDChecker()
 
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return restrictRotation
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        OneSignal.initialize("736d836e-16f2-44b9-bbbd-73f4db23d783", withLaunchOptions: nil)
+        oneSignalIDCheker.startCheckingOneSignalID()
+        initViewControllers()
         return true
+    }
+    
+    private func initViewControllers() {
+        let controller: UIViewController
+        if let lastUrl = SaveService.lastUrl {
+            controller = WebviewVC(url: lastUrl)
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = controller
+            window?.makeKeyAndVisible()
+            print("saved")
+        }else{
+            controller = LoadingSplash()
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = controller
+            window?.makeKeyAndVisible()
+            print("not saved")
+        }
     }
 
     // MARK: UISceneSession Lifecycle

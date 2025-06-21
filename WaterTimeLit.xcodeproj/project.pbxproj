@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74BB00A02E06A0AF001112D9 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BB009E2E06A0AF001112D9 /* LoaderViewController.swift */; };
+		74BB00A12E06A0AF001112D9 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BB009D2E06A0AF001112D9 /* InternetViewController.swift */; };
+		74BB00A22E06A0AF001112D9 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BB009C2E06A0AF001112D9 /* CheckLink.swift */; };
+		74BB00A52E06A100001112D9 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 74BB00A42E06A100001112D9 /* OneSignalExtension */; };
+		74BB00A72E06A100001112D9 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 74BB00A62E06A100001112D9 /* OneSignalFramework */; };
+		74BB00A92E06A100001112D9 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 74BB00A82E06A100001112D9 /* OneSignalInAppMessages */; };
+		74BB00AB2E06A100001112D9 /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 74BB00AA2E06A100001112D9 /* OneSignalLocation */; };
 		74C289382E0058FF00D7BF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2892E2E0058FF00D7BF47 /* AppDelegate.swift */; };
 		74C289392E0058FF00D7BF47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C289352E0058FF00D7BF47 /* SceneDelegate.swift */; };
-		74C2893A2E0058FF00D7BF47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C289362E0058FF00D7BF47 /* ViewController.swift */; };
 		74C2893B2E0058FF00D7BF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C2892F2E0058FF00D7BF47 /* Assets.xcassets */; };
 		74C2893D2E0058FF00D7BF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C289322E0058FF00D7BF47 /* LaunchScreen.storyboard */; };
 		74C2893E2E0058FF00D7BF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C289342E0058FF00D7BF47 /* Main.storyboard */; };
@@ -34,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		515FABAB6D1C548880858F07 /* Pods_WaterTimeLit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterTimeLit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74BB009C2E06A0AF001112D9 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
+		74BB009D2E06A0AF001112D9 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		74BB009E2E06A0AF001112D9 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		74C289162E0058EE00D7BF47 /* WaterTimeLit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterTimeLit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C2892E2E0058FF00D7BF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74C2892F2E0058FF00D7BF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,7 +50,6 @@
 		74C289312E0058FF00D7BF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74C289332E0058FF00D7BF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74C289352E0058FF00D7BF47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74C289362E0058FF00D7BF47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74C2893F2E00594000D7BF47 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		74C289622E00597000D7BF47 /* ChooseStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseStartView.swift; sourceTree = "<group>"; };
 		74C289642E005BB500D7BF47 /* AquaTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaTabBar.swift; sourceTree = "<group>"; };
@@ -68,6 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74BB00A92E06A100001112D9 /* OneSignalInAppMessages in Frameworks */,
+				74BB00A72E06A100001112D9 /* OneSignalFramework in Frameworks */,
+				74BB00AB2E06A100001112D9 /* OneSignalLocation in Frameworks */,
+				74BB00A52E06A100001112D9 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +102,16 @@
 				B94F24C4FE511F0FD50189C6 /* Pods-WaterTimeLit.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		74BB009F2E06A0AF001112D9 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				74BB009C2E06A0AF001112D9 /* CheckLink.swift */,
+				74BB009D2E06A0AF001112D9 /* InternetViewController.swift */,
+				74BB009E2E06A0AF001112D9 /* LoaderViewController.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		74C2890D2E0058EE00D7BF47 = {
@@ -119,7 +141,6 @@
 				74C289322E0058FF00D7BF47 /* LaunchScreen.storyboard */,
 				74C289342E0058FF00D7BF47 /* Main.storyboard */,
 				74C289352E0058FF00D7BF47 /* SceneDelegate.swift */,
-				74C289362E0058FF00D7BF47 /* ViewController.swift */,
 				74C289692E005BB500D7BF47 /* Components */,
 				74C289722E005BB700D7BF47 /* Styles */,
 				74C2897D2E005BB900D7BF47 /* Views */,
@@ -160,6 +181,7 @@
 				74C2897A2E005BB900D7BF47 /* SettingsView.swift */,
 				74C2897B2E005BB900D7BF47 /* WaterCupsView.swift */,
 				74C2897C2E005BB900D7BF47 /* WaterNormView.swift */,
+				74BB009F2E06A0AF001112D9 /* LoadingView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 74C2890D2E0058EE00D7BF47;
+			packageReferences = (
+				74BB00A32E06A100001112D9 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			productRefGroup = 74C289172E0058EE00D7BF47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,7 +295,6 @@
 				74C2896D2E005BB500D7BF47 /* NeumorphicCard.swift in Sources */,
 				74C2896E2E005BB500D7BF47 /* WaveProgressBar.swift in Sources */,
 				74C289632E00597000D7BF47 /* ChooseStartView.swift in Sources */,
-				74C2893A2E0058FF00D7BF47 /* ViewController.swift in Sources */,
 				74C2897E2E005BB900D7BF47 /* AchievementsView.swift in Sources */,
 				74C2897F2E005BB900D7BF47 /* ContentView.swift in Sources */,
 				74C289802E005BB900D7BF47 /* HistoryView.swift in Sources */,
@@ -278,6 +302,9 @@
 				74C289822E005BB900D7BF47 /* SettingsView.swift in Sources */,
 				74C289832E005BB900D7BF47 /* WaterCupsView.swift in Sources */,
 				74C289842E005BB900D7BF47 /* WaterNormView.swift in Sources */,
+				74BB00A02E06A0AF001112D9 /* LoaderViewController.swift in Sources */,
+				74BB00A12E06A0AF001112D9 /* InternetViewController.swift in Sources */,
+				74BB00A22E06A0AF001112D9 /* CheckLink.swift in Sources */,
 				74C289732E005BB700D7BF47 /* Theme.swift in Sources */,
 				74C289742E005BB700D7BF47 /* WaterBalanceBackground.swift in Sources */,
 				74C289752E005BB700D7BF47 /* WaterTimeStyles.swift in Sources */,
@@ -326,7 +353,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.watertime.wertshka2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -359,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.watertime.wertshka2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -513,6 +540,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74BB00A32E06A100001112D9 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74BB00A42E06A100001112D9 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74BB00A32E06A100001112D9 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		74BB00A62E06A100001112D9 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74BB00A32E06A100001112D9 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		74BB00A82E06A100001112D9 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74BB00A32E06A100001112D9 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		74BB00AA2E06A100001112D9 /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74BB00A32E06A100001112D9 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalLocation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74C2890E2E0058EE00D7BF47 /* Project object */;
 }
